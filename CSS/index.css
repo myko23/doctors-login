@@ -31,7 +31,7 @@ body {
 }
 .sbox-logo {
     border-radius: 50%;
-    background-image: url(/images/icon.jpg);
+    background-image: url(/icon.jpg);
     background-size: 20rem;
     background-position: center -1rem;
     background-repeat: no-repeat;
