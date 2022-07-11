@@ -1,0 +1,115 @@
+html {
+    font-size: 45%;
+    font-family:'Roboto Mono', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: dodgerblue;
+    overflow: hidden;
+}
+.signin {
+    height: 100%;
+    width: 100%;   
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sbox-container {
+    border: none;
+    height: 65rem;
+    width: 60rem;
+    border-radius: 3rem;
+    background-color: white;   
+    box-shadow: 1px 1px 5px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sbox-logo {
+    border-radius: 50%;
+    background-image: url(/images/icon.jpg);
+    background-size: 20rem;
+    background-position: center -1rem;
+    background-repeat: no-repeat;
+    border: .3rem solid dodgerblue;
+    width: 15rem;
+    height: 15rem;
+}
+.sbox-header {
+    font-size: 8rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    color: #4f4d4d
+}
+.sbox-section {
+    position: relative;
+}
+.sbox-icon {
+    font-size: 3rem;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    z-index: 100;
+    color: gray;
+    transition: color .5s;    
+}
+
+.sbox-icon.focus {
+    color:dodgerblue;
+}
+
+.sbox-label {
+    width: 20rem;
+    position:absolute;
+    top: 3.8rem;
+    left: 7rem;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+    font-weight: bold;
+    transition: transform 0.5s, font-size 0.5s;
+    pointer-events: none;
+}
+.sbox-label.focus {
+    transform: translateY(-1.5rem);
+    font-size: 2rem;
+}
+.sbox-input {    
+    width: 39rem;
+    height: 5rem;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    padding-left: 7rem;
+    border:none;
+    border-bottom: 2px solid grey;
+    outline: 0;
+    transition: border-bottom .5s;
+}
+
+.sbox-input.focus {
+    border-bottom: 2px solid dodgerblue;
+}
+
+
+.sbox-button {
+    margin-top: 4rem;
+    border-radius: 20rem;
+    width: 45rem;
+    height: 6rem;
+    font-size: 3rem;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+}
+
+.sbox-button:hover {
+    background-color: #006ad1;
+    
+}
+
